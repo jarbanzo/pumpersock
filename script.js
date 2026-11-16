@@ -8,7 +8,7 @@ const pickBtn = document.getElementById('pickBtn');
 let localImages = [];
 let lastIndex = -1;
 
-fetch(`https://://github.com${username}/${repo}/contents/${folder}`)
+fetch(`https://api.github.com/repos/${username}/${repo}/contents/${folder}`)
   .then(response => {
     if (!response.ok) {
       throw new Error(`GitHub API error (${response.status}): Make sure the repo is public and the folder name matches.`);
