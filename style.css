@@ -21,7 +21,7 @@ img {
   max-width: 95vw;
   height: 500px;
   max-height: 95vh;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
   display: block;
   margin: 15px auto;
