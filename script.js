@@ -19,8 +19,6 @@ fetch(`https://api.github.com/repos/${username}/${repo}/contents/${folder}`)
     localImages = files
       .filter(file => /\.(jpg|jpeg|png|gif|webp)$/i.test(file.name))
       .map(file => file.path);
-
-    setRandomLocalImage();
   })
   .catch(error => console.error('Error loading images:', error));
 
