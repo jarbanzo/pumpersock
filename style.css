@@ -1,12 +1,12 @@
 body {
-  font-family: Montserrat, bold;
+  font-family: Verdana;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #0b1f0d;
   color: white;
-  margin: 0;
+  margin: 0px;
 }
 
 .container {
@@ -15,17 +15,18 @@ body {
 }
 
 img {
-  width: 500px;
+  width: 400px;
   max-width: 95vw;
-  height: 500px;
-  max-height: 95vh;
+  height: 400px;
+  max-height: 80vh;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 0px;
   display: block;
-  margin: 15px auto;
+  margin: 15px;
 }
 
 button {
+  font-family: Verdana;
   background-color: #21962d;
   color: white;
   border: none;
@@ -35,6 +36,7 @@ button {
   cursor: pointer;
   transition: filter 0.2s;
   transition: background-color 0.2s;
+  margin: 10px;
 }
 
 button:hover {
