@@ -8,13 +8,17 @@ const pickBtn = document.getElementById('pickBtn');
 let localImages = [];
 let lastIndex = -1;
 
-fetch(`https://github.com{username}/${repo}/contents/${folder}`)
-  .then(response => response.json())
+fetch(`https://://github.com${username}/${repo}/contents/${folder}`)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`GitHub API error (${response.status}): Make sure the repo is public and the folder name matches.`);
+    }
+    return response.json();
+  })
   .then(files => {
-    // Filter to include only image files and grab their paths
     localImages = files
       .filter(file => /\.(jpg|jpeg|png|gif|webp)$/i.test(file.name))
-      .map(file => `${folder}/${file.name}`);
+      .map(file => file.download_url);
 
     setRandomLocalImage();
   })
