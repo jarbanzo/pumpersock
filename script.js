@@ -10,5 +10,4 @@ function setRandomLocalImage() {
   const randomIndex = Math.floor(Math.random() * localImages.length);
   imageElement.src = localImages[randomIndex];}
 
-setRandomLocalImage();
 pickBtn.addEventListener('click', setRandomLocalImage);
