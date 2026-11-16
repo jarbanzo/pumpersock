@@ -18,7 +18,7 @@ fetch(`https://api.github.com/repos/${username}/${repo}/contents/${folder}`)
   .then(files => {
     localImages = files
       .filter(file => /\.(jpg|jpeg|png|gif|webp)$/i.test(file.name))
-      .map(file => file.download_url);
+      .map(file => file.path);
 
     setRandomLocalImage();
   })
