@@ -1,16 +1,17 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, bold;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f4f4f9;
+  background-color: #0b1f0d;
+  color: white;
   margin: 0;
-  padding: 15px auto;
 }
 
 .container {
   text-align: center;
+  margin: 5px auto;
 }
 
 img {
@@ -25,12 +26,12 @@ img {
 }
 
 button {
-  background-color: #4f46e5;
+  background-color: #21962d;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
