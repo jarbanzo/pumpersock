@@ -33,8 +33,12 @@ button {
   font-size: 18px;
   border-radius: 4px;
   cursor: pointer;
+  transition: filter 0.2s;
+  transition: background-color 0.2s;
 }
 
 button:hover {
-  background-color: #4338ca;
+  background-color: #58b061;
+  filter: drop-shadow(2px 2px 4px #000000); 
+
 }
